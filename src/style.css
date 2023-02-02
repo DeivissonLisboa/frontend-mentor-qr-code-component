@@ -91,16 +91,23 @@ select {
 body {
   font-family: "Outfit", sans-serif;
   background-color: var(--clr-neutral-400);
+  display: grid;
+  place-items: center;
 }
 
 /* components */
 .card {
   background-color: var(--clr-neutral-300);
+  width: 40%;
 }
 
 /* utility */
 .fs-400 {
   font-size: var(--fs-400);
+}
+
+.text-center {
+  text-align: center;
 }
 
 .clr-neutral-400 {
@@ -113,4 +120,30 @@ body {
 
 .clr-primary-500 {
   color: var(--clr-primary-500);
+}
+
+.border-radius-10 {
+  border-radius: 10px;
+}
+
+.border-radius-15 {
+  border-radius: 15px;
+}
+
+.padding-16 {
+  padding: 1rem;
+}
+
+.padding-32 {
+  padding: 2rem;
+}
+
+.margin-top-1 {
+  margin-top: 1rem;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 90%;
+  }
 }
